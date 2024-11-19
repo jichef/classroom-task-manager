@@ -24,11 +24,11 @@ def authenticate():
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
-            print("Token refrescado.")
+           
         else:
             flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
-            print("Nuevo token obtenido con scopes:", creds.scopes)
+           
         with open('token.json', 'w') as token_file:
             token_file.write(creds.to_json())
     return creds
@@ -223,6 +223,12 @@ def read_tasks_from_csv(file_path):
 
 # Bloque principal del script
 def main():
+    # Mostrar información del creador
+    print("")
+    print("Este programa ha sido creado por Juan Ignacio Checa Franquelo.")
+    print("Profesor de Ed. Primaria en el colegio Ntra. Sra. de la Consolación de Granada.")
+    print("Contacto: jichef@gmail.com\n")
+    
     # Si no se proporcionan argumentos, mostrar los cursos y pedir seleccionar uno
     if len(sys.argv) == 1:
         courses = list_courses()
