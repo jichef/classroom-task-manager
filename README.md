@@ -1,4 +1,7 @@
   
+# Classroom Task Manager UPDATE
+He añadido un entorno visual en la carpeta GUI. Es mucho más sencillo que andar con comandos. En la ventana principal puedes autenticarte, mostrar tus clases y, dentro de cada clase, muestra todas las tareas (programadas o no, publicadas o borradores), permitiendo modificarlas, eliminarlas o simplemente revisarlas; además de crear nuevas o la función estrella por la que fue creado el programa: crear tareas en bloque desde un txt o un excel.
+
 # Classroom Task Manager
 
 Este proyecto es un script en Python para interactuar con la API de Google Classroom. Te permite listar cursos, gestionar tareas y programar publicaciones de forma eficiente. Te pongo un ejemplo:
